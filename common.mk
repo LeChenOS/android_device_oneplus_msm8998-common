@@ -177,10 +177,6 @@ PRODUCT_PACKAGES += \
     vendor.display.config@1.0 \
     vendor.display.config@1.0_vendor
 
-# OneplusShit
-PRODUCT_PACKAGES += \
-    OneplusShit    
-
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
