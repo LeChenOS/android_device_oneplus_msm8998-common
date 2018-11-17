@@ -22,6 +22,12 @@
 # definition file).
 #
 
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+
+PRODUCT_ENFORCE_RRO_TARGETS := \
+    framework-res
+
 $(call inherit-product, vendor/oneplus/msm8998-common/msm8998-common-vendor.mk)
 
 # Overlays
@@ -89,7 +95,6 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-service \
     android.hardware.audio.effect@4.0-impl \
     audio.a2dp.default \
-    audio_amplifier.msm8998 \
     audio.primary.msm8998 \
     audio.r_submix.default \
     audio.usb.default \
