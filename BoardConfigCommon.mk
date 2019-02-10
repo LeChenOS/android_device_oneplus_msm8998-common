@@ -22,6 +22,9 @@
 # definition file).
 #
 
+# Inherit from oppo-common
+-include device/oppo/common/BoardConfigCommon.mk
+
 PLATFORM_PATH := device/oneplus/msm8998-common
 
 TARGET_SPECIFIC_HEADER_PATH := $(PLATFORM_PATH)/include
@@ -162,6 +165,8 @@ TARGET_USES_QTI_CAMERA_DEVICE := true
 TARGET_USES_QTI_CAMERA2CLIENT := true
 BOARD_QTI_CAMERA_32BIT_ONLY := true
 TARGET_USES_MEDIA_EXTENSIONS := true
+TARGET_CAMERA_NEEDS_CLIENT_INFO := true
+USE_CAMERA_STUB := true
 
 # Charger
 BOARD_CHARGER_ENABLE_SUSPEND := true
